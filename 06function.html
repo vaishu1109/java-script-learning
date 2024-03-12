@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>function</title>
+</head>
+<body>
+    <h1>I am lerning javaScript</h1>
+
+    <script>
+        // argument with return
+        function areaOfCircle( radius ){
+            const area=3.14*radius*radius;
+            return area;
+        }
+        const areaCircle=areaOfCircle(20);
+        console.log(`Area of circle of ${20} is ${areaCircle}`);
+
+        // no argument and no return value
+        function noArgumentNoReturn(){
+            console.log("This function is called as no arguemt and no return value.");
+        }
+        noArgumentNoReturn();
+
+        // argument but no return value
+        function argumentButNoReturn(name){
+            console.log(`Hello ${name}.... Function is having argument but no return value.`);
+        }
+        argumentButNoReturn("Vaishnavi");
+
+        // no argument but return the value
+        function noArgumentButReturn(){
+            const a=20;
+            const b=30;
+            const c=a+b;
+            return c;
+        }
+        console.log(`addition of two no using no argument but return value function :`,noArgumentButReturn());
+
+        //function contain default parameter 
+        function argumentWithDefault(name="vaishnavi"){
+            console.log(`Hello ${name}..`);
+        }
+        argumentWithDefault("Sneha")
+
+    </script>
+</body>
+</html>
